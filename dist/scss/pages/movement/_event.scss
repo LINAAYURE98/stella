@@ -1,0 +1,219 @@
+/* MOVEMENT EVENT
+======================================================================================================================= */
+.movement-event {
+  padding: 6rem 0;
+  position: relative;
+  .movement-event__layer {
+    position: absolute;
+    z-index: 0;
+    &.one {
+      background-color: $cp3;
+      width: 100%;
+      bottom: 0;
+      height: 250px;
+      left: 0;
+    }
+    &.two {
+      background-color: $cp2;
+      width: 1300px;
+      height: 430px;
+      left: 0;
+      top: 12rem;
+
+    }
+  }
+  .movement-event__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .movement-event__title {
+    text-align: center;
+    color: $cp1;
+    text-transform: uppercase;
+    font-family: $fp1;
+    letter-spacing: 0.1em;
+    font-size: 42px;
+    width: 100%;
+  }
+  .movement-event__info {
+    width: 50%;
+    color: $cw;
+    margin: 7rem 0 0 0;
+    padding: 0 1rem 0 0;
+  }
+  .info__title {
+    font-family: $fp1;
+    margin: 0;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .info__subtitle {
+    font-family: $fp2;
+    margin: 1.4rem 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+  }
+  .info__text {
+    font-size: 24px;
+    font-family: $fp2;
+    line-height: 1.4;
+    margin: 1rem 0 0 0;
+    font-weight: 400;
+  }
+  .info__button {
+    width: 240px;
+    height: 50px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+    background-color: $cp1;
+    font-family: $fp2;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-size: 18px;
+  }
+  .movement-event__swiper {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    padding: 1.6rem 1.6rem 4rem 1.6rem;
+    margin: 4rem 0 0 0;
+  }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background-color: $cw;
+    position: relative;
+    margin: 0 .8rem !important;
+    &-active::before {
+      position: absolute;
+      content: "";
+      left: -10px;
+      top: -10px;
+      width: 40px;
+      border-radius: 100%;
+      height: 40px;
+      background-color: rgba($color: $cw, $alpha: 0.4);
+    }
+  }
+  .movement-event__card {
+    width: 100%;
+    height: 290px;
+    background-color: $cw;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.4));
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 35% auto;
+    overflow: hidden;
+  }
+  .cards__header {
+    background-color: $cp1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $cw;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cards__date {
+    font-family: $fp2;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    margin: -3rem 0 0 0;
+  }
+  .cards__hour {
+    font-family: $fp1;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    margin: 3rem 0 0 0;
+    text-align: center;
+    span {
+      font-family: $fp2;
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      display: block;
+    }
+  }
+  .cards__body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cards__title {
+    font-family: $fp2;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+  .cards__text {
+    font-family: $fp2;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .cards__flag {
+    background-color: $cp2;
+    width: 56px;
+    display: flex;
+    color: $cw;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .cards__location {
+    display: flex;
+    text-transform: uppercase;
+    border: 1px solid $cp2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40px;
+    border-radius: 100px;
+    color: $cp2;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $fp2;
+    letter-spacing: 0.05em;
+    img {
+      margin: 0 5px 0 0;
+    }
+  }
+  .cards__button {
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid $cp2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fp2;
+    letter-spacing: 0.05em;
+    color: $cp2;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    background-color: rgba($color: $cp2, $alpha: 0.2);
+  }
+}

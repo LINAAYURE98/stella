@@ -1,0 +1,215 @@
+/* REGISTER
+======================================================================================================================= */
+.register {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -10rem;
+    left: -10rem;
+    width: 483px;
+    height: 1300px;
+    background-image: url(../img/misc/layer-banner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+  }
+  .register__layer {
+    height: 780px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $cp1;
+    z-index: 1;
+  }
+  .register__content {
+    position: relative;
+    z-index: 3;
+    background-color: $cw;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    color: $cp1;
+    padding: 3rem 6rem;
+  }
+  .register__title {
+    text-align: center;
+    font-family: $fp1;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+  .register__subtitle {
+    text-align: center;
+    font-family: $fp2;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 800;
+    margin: 1.4rem 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .register__form {
+    margin: 4rem 0 0 0;
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    .form-group {
+      flex-basis: 48%;
+    }
+    select {
+      background-position: 96% 50%;
+    }
+    &.birthdate .input-control {
+      flex-basis: 30%;
+      text-align: center;
+    }
+  }
+  .form-group {
+    margin: 0 0 2rem 0;
+  }
+  .label-control {
+    display: block;
+    font-family: $fp2;
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+  .input-control {
+    width: 100%;
+    display: block;
+    height: 60px;
+    background-color: $cp3;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0 0 0;
+    padding: 0 1.2rem;
+    font-family: $fp2;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    color: $cp1;
+    &:focus {
+      outline: none;
+    }
+    &.error {
+      border: 1px solid $cp2;
+    }
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  select {
+    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-image: url('../img/misc/chevron-down.png');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 98% 50%;
+    border-radius: 0;
+  }
+  .error-message {
+    color: $cp2;
+    display: block;
+    font-family: $fp2;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0 0 0 10px;
+    margin: 5px 0 0 0;
+    letter-spacing: 0.05em;
+    &:first-child {
+      margin: 10px 0 0 0;
+    }
+  }
+  .form-group-terms {
+    margin: 3rem 0 0 0;
+  }
+  .form-group-checkbox {
+    display: flex;
+    margin: 0 0 2rem 0;
+  }
+  .input-control-checkbox {
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    &:checked + .label-control-checkbox::after {
+      opacity: 1;
+    }
+  }
+  .label-control-checkbox {
+    padding: 0 0 0 3.4rem;
+    position: relative;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    font-family: $fp2;
+    color: $cp4;
+    letter-spacing: 0.09em;
+    display: flex;
+    align-items: center;
+    min-height: 36px;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 5px;
+      border: 2px solid $cp4;
+      cursor: pointer;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 7px;
+      width: 22px;
+      height: 18px;
+      background-image: url(../img/misc/icon-check.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      opacity: 0;
+      transition: all .4s ease-in-out;
+    }
+  }
+  .form-group-submit {
+    margin: 3rem 0 0 0;
+  }
+  .submit-control {
+    width: 240px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: $cp2;
+    color: $cw;
+    text-transform: uppercase;
+    border: none;
+    margin: 0 auto;
+    font-family: $fp2;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+  }
+}

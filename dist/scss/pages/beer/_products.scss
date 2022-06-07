@@ -1,0 +1,113 @@
+/* BEER PRODUCTS
+======================================================================================================================= */
+.beer-products {
+  height: 800px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -28rem;
+    right: -17rem;
+    width: 2030px;
+    height: 1060px;
+    background-image: url(../img/misc/vectorM.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+  .beer-products__layer {
+    position: absolute;
+    right: 0;
+    bottom: -2rem;
+    width: 690px;
+    height: 660px;
+    background-color: $cp1;
+  }
+  .beer-products__content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    z-index: 2;
+    padding: 4rem 0 0 0;
+  }
+  .beer-products__info {
+    width: 90%;
+  }
+  .beer-products__title {
+    font-family: $fp1;
+    line-height: 1;
+    font-size: 42px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .beer-products__text {
+    font-family: $fp2;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    margin: 2rem 0 0 0;
+  }
+  .beer-products__swiper {
+    width: 100%;
+    position: relative;
+    margin: 5rem 0 0 0;
+    .swiper {
+      overflow: hidden;
+      padding: 5rem 0 1rem 0;
+    }
+  }
+  .swiper-item {
+    background-color: $cw;
+    height: 250px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .swiper-title, .swiper-text {
+    display: none;
+  }
+  .swiper-image {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    object-position: 50%;
+  }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: none;
+  }
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    left: 6rem;
+    right: auto;
+  }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 0;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 0;
+    img {
+      width: 70px;
+    }
+  }
+  .beer-products__figure {
+    width: 100%;
+    height: 640px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+    background-color: $cw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .beer-products__image {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+  }
+}

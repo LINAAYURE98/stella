@@ -1,0 +1,138 @@
+/* SALES COUPONS
+======================================================================================================================= */
+.sales-coupons {
+  padding: 5rem 0 4rem 0;
+  position: relative;
+  color: $cp1;
+  .sales-coupons__layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1200px;
+    height: 1100px;
+    background-color: $cp2;
+    z-index: 0;
+  }
+  .sales-coupons__content {
+    position: relative;
+    z-index: 1;
+  }
+  .sales-coupons__title {
+    text-align: center;
+    font-family: $fp1;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .sales-coupons__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 7rem 0 0 0;
+  }
+  .cards-item {
+    background-color: $cw;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.4));
+    height: 270px;
+    display: grid;
+    grid-template-columns: 35% auto;
+    overflow: hidden;
+  }
+  .cards-item__header {
+    background-color: $cp1;
+    color: $cw;
+    height: 100%;
+  }
+  .cards-item__header {
+    background-color: $cp1;
+    color: $cw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  .cards-item__image {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    object-position: 50%;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .cards-item__discount {
+    font-size: 24px;
+    line-height: 1;
+    font-family: $fp1;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 0 0 1rem 0;
+    span {
+      font-size: 50px;
+      display: block;
+      margin: 0 0 5px 0;
+    }
+  }
+  .cards-item__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  .cards-item__title {
+    font-family: $fp2;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+  }
+  .cards-item__text {
+    font-family: $fp2;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.09em;
+    line-height: 1.4;
+    margin: 1rem 0 0 0;
+  }
+  .cards-item__button {
+    font-family: $fp2;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+    width: 180px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: $cp2;
+    letter-spacing: 0.05em;
+    color: $cw;
+    margin: 1rem 0 0 0;
+  }
+  .sales-coupons__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $cp1;
+    color: $cw;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: $fp2;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    width: 240px;
+    height: 50px;
+    border-radius: 100px;
+    margin: 2.6rem 0 0 0;
+  }
+
+}

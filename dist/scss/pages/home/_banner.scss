@@ -1,0 +1,101 @@
+/* HOME BANNER
+======================================================================================================================= */
+.home-banner {
+  padding: 8rem 0;
+  background-color: $cp1;
+  color: $cp3;
+  position: relative;
+  .home-banner__layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 35%;
+    background-color: $cp2;
+    z-index: 1;
+  }
+  .home-banner__content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: -4rem;
+  }
+  .home-banner__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .home-banner__info {
+    padding: 0 0 0 2rem;
+  }
+  .home-banner__title {
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0;
+    font-family: $fp1;
+  }
+  .home-banner__subtitle {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    margin: 2rem 0 0 0;
+    font-family: $fp2;
+  }
+  .home-banner__button {
+    width: 240px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $cp2;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 800;
+    margin: 3rem 0 0 0;
+    font-family: $fp2;
+  }
+  .home-banner__swiper {
+    margin: 3rem 0 0 0;
+    padding: 0 0 0 1rem;
+    .swiper {
+      overflow: hidden;
+    }
+  }
+  .swiper-title, .swiper-text, .swiper-button {
+    display: none;
+  }
+  .swiper-image {
+    width: 100%;
+    opacity: .5;
+  }
+  .swiper-pagination {
+    text-align: left;
+    bottom: -4.8rem;
+    left: .4rem;
+  }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background-color: $cw;
+    position: relative;
+    margin: 0 .8rem !important;
+    &-active::before {
+      position: absolute;
+      content: "";
+      left: -10px;
+      top: -10px;
+      width: 40px;
+      border-radius: 100%;
+      height: 40px;
+      background-color: rgba($color: $cw, $alpha: 0.4);
+    }
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- Genera Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Registro</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Secondary Meta Tags -->
+  <meta name="copyright" content="">
+  <meta name="country" content="">
+  <meta name="url" content="">
+  <meta name="robots" content="">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="fb:app_id" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:locale" content="">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+
+  <!-- Bootstrap Core Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Swiper Core Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha512-nSomje7hTV0g6A5X/lEZq8koYb5XZtrWD7GU2+aIJD35CePx89oxSM+S7k3hqNSpHajFbtmrjavZFxSEfl6pQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fresco Core Styles -->
+  <link href="dist/css/fresco.css" rel="stylesheet">
+
+  <!-- Own Styles -->
+  <link href="dist/css/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="/">
+          <img src="dist/img/misc/logo.png" alt="..." class="header-logo">
+        </a>
+        <nav>
+          <input id="toggle" class="toggle" type="checkbox">
+          <label for="toggle">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </label>
+          <ul class="header-menu" id="menu">
+            <li class="header-menu__item active"> <a href="" class="heaer-menu__link">Inicio</a> </li>
+            <li class="header-menu__item"> <a href="" class="heaer-menu__link">Nuestra Cerveza</a> </li>
+            <li class="header-menu__item"> <a href="" class="heaer-menu__link">Eventos</a> </li>
+            <li class="header-menu__item"> <a href="" class="heaer-menu__link">Movement</a> </li>
+            <li class="header-menu__item"> <a href="" class="heaer-menu__link">promos</a> </li>
+          </ul>
+        </nav>
+        <span class="header-button"><a href="">Registrarme</a></span>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+
+  <main>
+
+    <!-- Register -->
+    <section class="register">
+      <span class="register__layer"></span>
+      <div class="container register__content">
+        <h2 class="register__title">h2: REGíSTRAtE</h2>
+        <h3 class="register__subtitle">completa el siguiente formulario</h3>
+        <form action="" class="register__form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstname" class="label-control">Nombres *</label>
+              <input type="text" name="firstname" id="firstname" class="input-control error" placeholder="Escribe tu(s) nombre(s)">
+              <div>
+                <label class="error-message">Ingresa tu nombre</label>
+                <label class="error-message">No se permiten números o caracteres especiales</label>
+                <label class="error-message">Solo se permiten letras</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lastname" class="label-control">Apellidos *</label>
+              <input type="text" name="lastname" id="lastname" class="input-control" placeholder="Escribe tus apellidos">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="lastname" class="label-control">Documento de identidad *</label>
+              <input type="number" name="lastname" id="lastname" class="input-control" placeholder="000 000 0000">
+            </div>
+            <div class="form-group">
+              <label for="email" class="label-control">Apellidos *</label>
+              <input type="email" name="email" id="email" class="input-control" placeholder="Escribe tu correo electrónico">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" class="label-control">Celular *</label>
+              <input type="number" name="phone" id="phone" class="input-control" placeholder="+502 000 000 000">
+            </div>
+            <div class="form-group">
+              <label for="city" class="label-control">Ciudad *</label>
+              <select name="city" id="city" class="input-control">
+                <option value="" selected>Selecciona una opción *</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="genre" class="label-control">Género *</label>
+              <select name="genre" id="genre" class="input-control">
+                <option value="" selected>Selecciona una opción *</option>
+                <option value="01">01</option>
+                <option value="01">01</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="birthdate" class="label-control">Fecha de nacimiento *</label>
+              <div class="form-row birthdate">
+                <input type="birthdate" name="birthdate" id="birthdate-day" placeholder="DD" class="input-control">
+                <input type="birthdate" name="birthdate" id="birthdate-month" placeholder="MM" class="input-control">
+                <input type="birthdate" name="birthdate" id="birthdate-year" placeholder="AAAA" class="input-control">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="sport" class="label-control">¿Cuál es tu deporte favorito? *</label>
+            <select name="sport" id="sport" class="input-control">
+              <option value="" selected>Selecciona una opción *</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+          <div class="form-group d-none" id="sport-other">
+            <label for="sport-other" class="label-control">Escribe el deporte *</label>
+            <input type="text" name="sport-other" id="sport-other" class="input-control" placeholder="Escribe tu deporte favorito">
+          </div>
+          <div class="form-group-terms">
+            <div class="form-group form-group-checkbox">
+              <input type="checkbox" name="tyc" id="tyc" class="input-control-checkbox">
+              <label for="tyc" class="label-control-checkbox">Acepto términos y condiciones y políticas de privacidad..</label>
+            </div>
+            <div class="form-group form-group-checkbox">
+              <input type="checkbox" name="advertising" id="advertising" class="input-control-checkbox">
+              <label for="advertising" class="label-control-checkbox">Deseo recibir información de eventos y promociones de Michelob Ultra.</label>
+            </div>
+          </div>
+          <div class="form-group-submit">
+            <input type="submit" class="submit-control" value="Registrarme">
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Register -->
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <ul class="footer-menu">
+        <li class="footer-menu__item"><a href="">Tap into your beer</a></li>
+        <li class="footer-menu__item"><a href="">Términos y condiciones</a></li>
+        <li class="footer-menu__item"><a href="">Políticas de privacidad</a></li>
+        <li class="footer-menu__item"><a href="">Contáctenos</a></li>
+        <li class="footer-menu__item"><a href="">Hablemos de alcohol</a></li>
+      </ul>
+      <ul class="footer-social">
+        <li class="footer-social__item"><a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/icon-fb.svg" alt=""></a></li>
+        <li class="footer-social__item"><a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/icon-ig.svg" alt=""></a></li>
+        <li class="footer-social__item"><a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/icon-tw.svg" alt=""></a></li>
+        <li class="footer-social__item"><a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/icon-yt.svg" alt=""></a></li>
+      </ul>
+    </div>
+    <span class="footer-copyright"> <strong>TOMAR BEBIDAS ALCOHÓLICAS EN EXCESO ES DAÑINO.</strong> Anheuser-Busch InBev © 2022. No compartas este contenido con menores de edad.</span>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- Modal Advice - Email Registered -->
+  <div class="modal-advice active" id="email-registered">
+    <div class="container">
+      <div class="modal-advice__content">
+        <button class="modal-advice__close"><img src="dist/img/misc/icon-close.png" alt=""></button>
+        <h2 class="modal-advice__title">h2:Correo electrónico ya está registrado</h2>
+        <h3 class="modal-advice__subtitle">El correo electrónico usado fue registrado por otro usuario, iintentalo nuevamente</h3>
+        <button class="modal-advice__button" type="button">Volver</button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Advice - Email Registered -->
+
+
+
+  <!-- Jquery Core Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Swiper Core Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Fresco Core Scripts -->
+  <script src="dist/js/libraries/fresco.min.js"></script>
+
+  <!-- Simply Countdown Core Scripts -->
+  <script src="dist/js/libraries/simplyCountdown.min.js"></script>
+
+  <!-- Own Scripts -->
+  <script src="dist/js/main.js"></script>
+
+
+</body>
+
+</html>
