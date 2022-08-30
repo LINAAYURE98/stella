@@ -1,0 +1,84 @@
+/* NEWSLETTER
+======================================================================================================================= */
+.Bookings__iframe{
+  .Bookings__logo{
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0;
+    text-align: center;
+    display: flex;
+    &::after{
+      content: "";
+      display: block;
+      width: 35%;
+      height: 1px;
+      bottom: -3rem;
+      background: #14142A;
+      left: 0;
+      right: 0;
+      float: right;
+      position: relative;
+    }
+    &::before{
+      content: "";
+      display: block;
+      width: 35%;
+      height: 1px;
+      bottom: -3rem;
+      background: #14142A;
+      left: 0;
+      right: 0;
+      position: relative;
+    }
+    .Bookings__logo-img {
+      margin: 0 2rem;
+    }
+  }
+  .Bookings {
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0;
+    background-image: url(../img/bg/bg-booking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    border-radius: 32px;
+    .Bookings__content {
+      width: 85%;
+      background-color: $cw;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+      border-radius: 32px;
+      margin: 0 auto;
+      padding: 3rem 4rem;
+      text-align: center;
+      color: $cp1;
+      position: relative;
+      z-index: 2;
+    }
+    .Bookings__title {
+      text-transform: uppercase;
+      font-family: $fp1;
+      margin: 0;
+      font-size: 36px;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      color: $cb;
+      &::before{
+        content: "";
+        display: block;
+        width: 91%;
+        height: 2px;
+        background: red;
+        position: relative;
+        top: 3rem;
+        right: 0;
+        margin: auto;
+      }
+    }
+    .Bookings__hrs{
+      background: $cp1;
+    }
+    
+  }
+}

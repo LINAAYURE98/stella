@@ -2,373 +2,54 @@
 <html lang="es">
 
 <head>
-
-  <!-- Genera Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Home</title>
-
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Secondary Meta Tags -->
-  <meta name="copyright" content="">
-  <meta name="country" content="">
-  <meta name="url" content="">
-  <meta name="robots" content="">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <meta property="fb:app_id" content="">
-  <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:locale" content="">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="">
-  <meta name="twitter:url" content="">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:creator" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
-
-
   <!-- Bootstrap Core Styles -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
   <!-- Swiper Core Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha512-nSomje7hTV0g6A5X/lEZq8koYb5XZtrWD7GU2+aIJD35CePx89oxSM+S7k3hqNSpHajFbtmrjavZFxSEfl6pQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <!-- Simply Countdown Core Styles -->
   <link href="dist/css/libraries/simplyCountdown.theme.default.css" rel="stylesheet">
-
   <!-- Fresco Core Styles -->
   <link href="dist/css/libraries/fresco.css" rel="stylesheet">
-
   <!-- Own Styles -->
-  <link href="dist/css/main.css" rel="stylesheet">
-
-
+  <link href="dist/scss/main.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- header -->
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <a href="/">
-          <img src="dist/img/misc/logo.png" alt="..." class="header-logo">
-        </a>
-        <nav>
-          <input id="toggle" class="toggle" type="checkbox">
-          <label for="toggle">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </label>
-          <ul class="header-menu" id="menu">
-            <li class="header-menu__item active"> <a href="" class="heaer-menu__link">Inicio</a> </li>
-            <li class="header-menu__item"> <a href="" class="heaer-menu__link">Nuestra Cerveza</a> </li>
-            <li class="header-menu__item"> <a href="" class="heaer-menu__link">Eventos</a> </li>
-            <li class="header-menu__item"> <a href="" class="heaer-menu__link">Movement</a> </li>
-            <li class="header-menu__item"> <a href="" class="heaer-menu__link">promos</a> </li>
-          </ul>
-        </nav>
-        <span class="header-button"><a href="">Registrarme</a></span>
-      </div>
-    </div>
-  </header>
-  <!-- header -->
-
   <main>
-
-    <!-- Home Banner -->
-    <section class="home-banner">
-      <span class="home-banner__layer"></span>
-      <div class="container home-banner__content">
-        <div>
-          <img src="" alt="" class="home-banner__image">
-        </div>
-        <div>
-          <div class="home-banner__info">
-            <h1 class="home-banner__title">h1: Auctor dolor aliquam quis non mauris.</h1>
-            <h2 class="home-banner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id volutpat interdum proin egestas mi. Commodo odio nunc.</h2>
-            <a href="" class="home-banner__button">Ver más</a>
+    <!-- Reservar -->
+    <section class="Bookings__iframe"> 
+      <div class="Bookings__logo">
+        <img class="Bookings__logo-img" src="dist/img/logos/logo_header.png" alt="Logo Frites">
+      </div>
+      <div class="Bookings">
+        <div class="Bookings__content">
+          <h3 class="Bookings__title">Reservas</h3>
+          <div class="form">
+            <script type="text/javascript"
+                src="https://www.covermanager.com/js/iframeResizer.min.js">
+            </script>
+            <iframe id="vista-frites-bogota" title="Reservas" src="https://www.covermanager.com/reservation/module_restaurant/frites-artois-bogota/spanish/?template=/Users/Julián Castaño/Desktop/GT-MichelobAON/dist/scss/main.css"
+            frameborder="0" height="550" width="100%" onload="iFrameResize();"></iframe>
           </div>
-          <div class="home-banner__swiper">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <h3 class="swiper-title">Lorem ipsum dolor sit amet, consectetur 01</h3>
-                  <p class="swiper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iusto accusantium corporis totam accusamus non nobis? 01</p>
-                  <a href="404.html" class="swiper-button"></a>
-                  <img src="dist/img/misc/banner1.jpg" alt="" class="swiper-image">
-                </div>
-                <div class="swiper-slide">
-                  <h3 class="swiper-title">Lorem ipsum dolor sit amet, consectetur 02</h3>
-                  <p class="swiper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iusto accusantium corporis totam accusamus non nobis? 02</p>
-                  <a href="sales.html" class="swiper-button"></a>
-                  <img src="dist/img/misc/banner2.jpg" alt="" class="swiper-image">
-                </div>
-                <div class="swiper-slide">
-                  <h3 class="swiper-title">Lorem ipsum dolor sit amet, consectetur 03</h3>
-                  <p class="swiper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iusto accusantium corporis totam accusamus non nobis? 03</p>
-                  <a href="register.html" class="swiper-button"></a>
-                  <img src="dist/img/misc/banner3.jpg" alt="" class="swiper-image">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+          
         </div>
       </div>
     </section>
-    <!-- Home Banner -->
-
-    <!-- Home Products -->
-    <section class="home-products">
-      <span class="home-products__layer"></span>
-      <div class="container home-products__content">
-        <div class="home-products__info">
-          <h2 class="home-products__title">h2: Presentación producto</h2>
-          <p class="home-products__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui et purus pharetra netus urna viverra. Nulla malesuada scelerisque condimentum accumsan, felis porttitor nisl curabitur. Purus natoque lacus.</p>
-          <a href="" class="home-products__button">Ver más</a>
-          <img src="dist/img/misc/home-products1.jpg" alt="" class="home-products__image">
-        </div>
-        <div class="home-products__info">
-          <img src="dist/img/misc/home-products2.jpg" alt="" class="home-products__image">
-          <div class="home-products__cards">
-            <div class="cards-item">
-              <h3 class="cards-item__title">3.5%</h3>
-              <h3 class="cards-item__subtitle">Alcohol</h3>
-              <h3 class="cards-item__small">por volumen</h3>
-            </div>
-            <div class="cards-item">
-              <h3 class="cards-item__subtitle">Ligera Michelob Ultra</h3>
-              <h3 class="cards-item__small">355 ml</h3>
-            </div>
-            <div class="cards-item">
-              <h3 class="cards-item__subtitle">Refrescante Michelob Ultra</h3>
-              <h3 class="cards-item__small">355 ml</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Home Products -->
-
-    <!-- Events -->
-    <section class="events">
-      <span class="events__layer"></span>
-      <div class="container events__content">
-        <h2 class="events__title">h2: PRÓXIMOS EVENTOS</h2>
-        <p class="events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui et purus pharetra netus urna viverra. Nulla malesuada scelerisque condimentum accumsan.</p>
-        <div class="events__cards">
-          <div class="cards-item">
-            <div class="cards-item__header">
-              <p class="cards-item__date">Lun. 15, Mayo</p>
-              <p class="cards-item__hour">08:00 <span>AM</span></p>
-            </div>
-            <div class="cards-item__body">
-              <img src="dist/img/misc/home-events-layer1.jpg" alt="" class="cards-item__image">
-              <div class="cards-item__info">
-                <h3 class="cards-item__title">Nombre_evento</h3>
-                <p class="cards-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl lacus ut aliquam risus. Feugiat nulla in euismod amet vitae turpis.</p>
-                <a href="" class="cards-item__location"><img src="dist/img/misc/map-pin.svg" alt=""> ver ubicación</a>
-                <a href="" class="cards-item__button">Running</a>
-              </div>
-            </div>
-          </div>
-          <div class="cards-item">
-            <div class="cards-item__header">
-              <p class="cards-item__date">Lun. 15, Mayo</p>
-              <p class="cards-item__hour">08:00 <span>AM</span></p>
-            </div>
-            <div class="cards-item__body">
-              <h3 class="cards-item__title">Nombre_evento</h3>
-              <p class="cards-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl lacus ut aliquam risus.Feugiat nulla in euismod amet vitae turpis.</p>
-              <a href="" class="cards-item__location"><img src="dist/img/misc/map-pin.svg" alt=""> ver ubicación</a>
-              <a href="" class="cards-item__button">Running</a>
-            </div>
-          </div>
-          <div class="cards-item">
-            <div class="cards-item__header">
-              <p class="cards-item__date">Lun. 15, Mayo</p>
-              <p class="cards-item__hour">08:00 <span>AM</span></p>
-            </div>
-            <div class="cards-item__body">
-              <h3 class="cards-item__title">Nombre_evento</h3>
-              <p class="cards-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl lacus ut aliquam risus.Feugiat nulla in euismod amet vitae turpis.</p>
-              <span class="cards-item__flag">• Live</span>
-              <a href="" class="cards-item__button">Running</a>
-            </div>
-          </div>
-        </div>
-        <a href="" class="events__button">Ver Todas</a>
-      </div>
-    </section>
-    <!-- Events -->
-
-    <!-- Home News -->
-    <section class="home-news">
-      <span class="home-news__layer"></span>
-      <div class="container home-news__content">
-        <div class="home-news__box">
-          <img src="dist/img/misc/home-news.jpg" alt="" class="home-news__image">
-          <div class="home-news__info">
-            <h3 class="home-news__title">h3: BANNER NOVEDADES</h3>
-            <p class="home-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, facilisi quis scelerisque lacinia congue amet placerat tortor et. Odio cras non pellentesque quis cursus aliquam, habitant. Varius sollicitudin aliquet leo tristique enim. Imperdiet varius mi facilisi sit rhoncus pulvinar sit lorem. Aliquet leo vestibulum donec tincidunt sit metus. </p>
-            <a href="" class="home-news__button">ver más</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Home News -->
-
-    <!-- Store -->
-    <section class="store">
-      <div class="container">
-        <h2 class="store__title">h2: ¿DÓNDE COMPRAR?</h2>
-        <p class="store__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui et purus pharetra netus urna viverra. </p>
-        <div class="swiper store__swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="store-cards__item">
-                <img src="dist/img/misc/product.png" alt="" class="store-cards__image">
-                <h3 class="store-cards__title">Nombre_ecommerce</h3>
-                <a href="" class="store-cards__button">Ir Ahora</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="store-cards__item">
-                <img src="dist/img/misc/product.png" alt="" class="store-cards__image">
-                <h3 class="store-cards__title">Nombre_ecommerce</h3>
-                <a href="" class="store-cards__button">Ir Ahora</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="store-cards__item">
-                <img src="dist/img/misc/product.png" alt="" class="store-cards__image">
-                <h3 class="store-cards__title">Nombre_ecommerce</h3>
-                <a href="" class="store-cards__button">Ir Ahora</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="store-cards__item">
-                <img src="dist/img/misc/product.png" alt="" class="store-cards__image">
-                <h3 class="store-cards__title">Nombre_ecommerce</h3>
-                <a href="" class="store-cards__button">Ir Ahora</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="store-cards__item">
-                <img src="dist/img/misc/product.png" alt="" class="store-cards__image">
-                <h3 class="store-cards__title">Nombre_ecommerce</h3>
-                <a href="" class="store-cards__button">Ir Ahora</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="store-cards__item">
-                <img src="dist/img/misc/product.png" alt="" class="store-cards__image">
-                <h3 class="store-cards__title">Nombre_ecommerce</h3>
-                <a href="" class="store-cards__button">Ir Ahora</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Store -->
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-      <div class="newsletter__content">
-        <h3 class="newsletter__title">h3: Regístrate a nuestro Newsletter</h3>
-        <p class="newsletter__text">Suscribete a nuestro newsletter, enterate primero de los eventos y noticias de Michelob Ultra</p>
-        <form action="" class="newsletter__form">
-          <div class="form-group email">
-            <input type="email" placeholder="Escribe tu correo electrónico" class="input-control">
-          </div>
-          <div class="form-group-terms">
-            <div class="form-group form-group-checkbox">
-              <input type="checkbox" name="tyc" id="tyc" class="input-control-checkbox">
-              <label for="tyc" class="label-control-checkbox">Acepto terminos y condiciones.</label>
-            </div>
-            <div class="form-group form-group-checkbox">
-              <input type="checkbox" name="advertising" id="advertising" class="input-control-checkbox">
-              <label for="advertising" class="label-control-checkbox">Deseo recibir información de eventos y promociones de Michelob Ultra.</label>
-            </div>
-          </div>
-          <div class="form-group-submit">
-            <input type="submit" class="submit-control" value="Suscribirme" disabled>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- Newsletter -->
-
-    <!-- App -->
-    <section class="app">
-      <div class="app__content">
-        <img src="dist/img/misc/runder-logo.png" alt="" class="app__image">
-        <h2 class="app__title">DESCARGA RUNNDER</h2>
-        <p class="app__text">Alcanza un estilo de vida fit y fun <br> junto con Michelob Ultra.</p>
-        <div class="app__logos">
-          <a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/google-play-logo.png" alt="" class="logos-image"></a>
-          <a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/app-store-logo.png" alt="" class="logos-image"></a>
-        </div>
-      </div>
-    </section>
-    <!-- App -->
+    
+    <!-- Reservar -->
 
   </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <ul class="footer-menu">
-        <li class="footer-menu__item"><a href="">Tap into your beer</a></li>
-        <li class="footer-menu__item"><a href="">Términos y condiciones</a></li>
-        <li class="footer-menu__item"><a href="">Políticas de privacidad</a></li>
-        <li class="footer-menu__item"><a href="">Contáctenos</a></li>
-        <li class="footer-menu__item"><a href="">Hablemos de alcohol</a></li>
-      </ul>
-      <ul class="footer-social">
-        <li class="footer-social__item"><a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/icon-fb.svg" alt=""></a></li>
-        <li class="footer-social__item"><a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/icon-ig.svg" alt=""></a></li>
-        <li class="footer-social__item"><a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/icon-tw.svg" alt=""></a></li>
-        <li class="footer-social__item"><a href="" target="_blank" rel="noreferrer"><img src="dist/img/misc/icon-yt.svg" alt=""></a></li>
-      </ul>
-    </div>
-    <span class="footer-copyright"> <strong>TOMAR BEBIDAS ALCOHÓLICAS EN EXCESO ES DAÑINO.</strong> Anheuser-Busch InBev © 2022. No compartas este contenido con menores de edad.</span>
-    </div>
-  </footer>
-  <!-- Footer -->
-
 
 
   <!-- Jquery Core Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
   <!-- Swiper Core Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
   <!-- Fresco Core Scripts -->
   <script src="dist/js/libraries/fresco.min.js"></script>
-
   <!-- Simply Countdown Core Scripts -->
   <script src="dist/js/libraries/simplyCountdown.min.js"></script>
-
   <!-- Own Scripts -->
   <script src="dist/js/main.js"></script>
-
-
 </body>
 
 </html>

@@ -1,0 +1,505 @@
+/* Fonts
+======================================================================================================================= */
+@import url("https://fonts.googleapis.com/css?family=Teko:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Homenaje");
+@font-face {
+  font-family: "DIN Next Lt Pro";
+  src: url("../fonts/DINNextLTPro BlackCondensed.otf");
+}
+@font-face {
+  font-family: "National";
+  src: url("../fonts/National-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "National";
+  src: url("../fonts/National-Medium.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "National";
+  src: url("../fonts/National-Bold.otf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Sharp Sans No2";
+  src: url("../fonts/SharpSansNo2-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Sharp Sans No2";
+  src: url("../fonts/SharpSansNo2-Bold.otf");
+  font-weight: 800;
+}
+/* Base
+======================================================================================================================= */
+html, body {
+  overflow-x: hidden;
+}
+
+a, a:active, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+}
+
+/* Animations
+======================================================================================================================= */
+/* NEWSLETTER
+======================================================================================================================= */
+.Bookings__iframe .Bookings__logo {
+  width: 80%;
+  margin: auto;
+  padding: 4rem 0;
+  text-align: center;
+  display: flex;
+}
+.Bookings__iframe .Bookings__logo::after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 1px;
+  bottom: -3rem;
+  background: #14142A;
+  left: 0;
+  right: 0;
+  float: right;
+  position: relative;
+}
+.Bookings__iframe .Bookings__logo::before {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 1px;
+  bottom: -3rem;
+  background: #14142A;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+.Bookings__iframe .Bookings__logo .Bookings__logo-img {
+  margin: 0 2rem;
+}
+.Bookings__iframe .Bookings {
+  width: 80%;
+  margin: auto;
+  padding: 4rem 0;
+  background-image: url(../img/bg/bg-booking.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  border-radius: 32px;
+}
+.Bookings__iframe .Bookings .Bookings__content {
+  width: 85%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 32px;
+  margin: 0 auto;
+  padding: 3rem 4rem;
+  text-align: center;
+  color: #D50032;
+  position: relative;
+  z-index: 2;
+}
+.Bookings__iframe .Bookings .Bookings__title {
+  text-transform: uppercase;
+  font-family: "DIN Next Lt Pro";
+  margin: 0;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.Bookings__iframe .Bookings .Bookings__title::before {
+  content: "";
+  display: block;
+  width: 91%;
+  height: 2px;
+  background: red;
+  position: relative;
+  top: 3rem;
+  right: 0;
+  margin: auto;
+}
+.Bookings__iframe .Bookings .Bookings__hrs {
+  background: #D50032;
+}
+
+::-moz-selection {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+::selection {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+body {
+  background: transparent !important;
+  background-color: none !important;
+  margin: 0;
+  font: 13px/20px normal Helvetica, Arial, sans-serif;
+  color: #4F5155;
+}
+
+a {
+  color: #505050;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #505050;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #2d2d2d;
+  border-color: #2d2d2d;
+}
+
+h1 {
+  color: #444;
+  background-color: transparent;
+  border-bottom: 1px solid #D0D0D0;
+  font-size: 19px;
+  font-weight: normal;
+  margin: 0 0 14px 0;
+  padding: 14px 15px 10px 15px;
+}
+
+code {
+  font-family: Consolas, Monaco, Courier New, Courier, monospace;
+  font-size: 12px;
+  background-color: #f9f9f9;
+  border: 1px solid #D0D0D0;
+  color: #2d2d2d;
+  display: block;
+  margin: 14px 0 14px 0;
+  padding: 12px 10px 12px 10px;
+}
+
+#container {
+  margin: 10px;
+  border: 1px solid #D0D0D0;
+  box-shadow: 0 0 8px #D0D0D0;
+}
+
+p {
+  margin: 12px 15px 12px 15px;
+}
+
+iframe#coverManager {
+  background: transparent;
+  background-color: none !important;
+}
+
+.ui-widget {
+  font-family: "Teko", sans-serif !important;
+  font-size: 1.5rem;
+  border: 2px solid #2d2d2d;
+}
+
+.ui-datepicker-title {
+  text-transform: uppercase;
+  font-family: "Teko", sans-serif;
+}
+
+#datos_reserva {
+  padding: 2rem 4rem;
+}
+
+.ui-datepicker-title {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+.ui-widget-header {
+  border: none;
+  background: #eee !important;
+}
+
+.ui-widget .ui-datepicker-calendar {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.ui-datepicker-calendar thead {
+  color: #505050;
+  font-family: "Teko";
+}
+
+.ui-widget-header .ui-icon {
+  background-image: none;
+}
+
+.ui-widget-header .ui-icon-closethick {
+  background-image: url("https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/images/ui-icons_888888_256x240.png") !important;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+  float: left;
+}
+
+.ui-datepicker .ui-datepicker-next span {
+  float: right;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  position: relative;
+  margin-left: 0;
+  margin-top: 0;
+  left: auto;
+  top: auto;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  opacity: 1 !important;
+  left: 7px;
+  top: 9px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+  opacity: 1 !important;
+  right: 7px;
+  top: 9px;
+}
+
+.ui-datepicker .ui-datepicker-prev .ui-icon {
+  background-image: url("/images/left.png");
+  background-position: center top;
+}
+
+.ui-datepicker .ui-datepicker-next .ui-icon {
+  background-image: url("/images/right.png");
+  background-position: center top;
+}
+
+.ui-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.ui-widget-content .ui-state-active {
+  background: red !important;
+  color: white;
+  border: 1px solid red !important;
+}
+
+.ui-widget-content a.ui-state-default:hover {
+  background: #eee !important;
+  color: black;
+}
+
+.ui-widget-content a.ui-state-active:hover {
+  background: #2d2d2d !important;
+  color: white;
+}
+
+label {
+  text-transform: uppercase;
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #2d2d2d;
+  margin-bottom: 2px;
+}
+
+.form-control {
+  height: auto;
+  border: 4px solid #cccccc;
+  font-family: "Homenaje", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.form-control:focus {
+  color: #2d2d2d;
+  border-color: black;
+}
+
+#reservar_button .form-control, .form-control .reservarButton, #volver_commentary, .reservarButton {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 3rem;
+  border-radius: 30px !important;
+  border: 3px solid black !important;
+  color: white;
+  background: #2d2d2d;
+  line-height: 45px;
+  height: 45px;
+  font-weight: 400 !important;
+  font-size: 24px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+}
+
+#btn-validate, #volver_commentary {
+  height: 48px !important;
+}
+
+#reservar_button .form-control:hover, #reservar_button .form-control:focus, #volver_commentary:hover, #volver_commentary:focus {
+  background: #2d2d2d;
+}
+
+#date_box {
+  margin-bottom: 3rem;
+}
+
+select:not([multiple]) {
+  padding: 8px 1rem 3px !important;
+}
+
+#datos_personales, #login_box {
+  padding: 0;
+}
+
+#login_box .mt10 {
+  margin-top: 5px !important;
+}
+
+.info_header2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.info_header2 a {
+  color: black;
+  text-decoration: none;
+  font-family: "Teko", sans-serif;
+  border: none;
+  font-weight: 500;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.info_header2 a:hover, .info_header2 a:focus {
+  color: #2d2d2d;
+}
+
+#login_box .col-sm-6 {
+  margin-bottom: 15px;
+}
+
+#commentary_div {
+  float: left !important;
+  margin-bottom: 1rem;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  border: 4px solid #ccc;
+}
+
+#commentary_div {
+  display: block;
+  width: 100%;
+  float: left;
+  color: #2d2d2d;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+#commentary_div a {
+  font-weight: bold;
+  color: #2d2d2d;
+  text-decoration: none;
+  border-color: black;
+}
+
+#commentary_div a:hover, #commentary_div a:focus {
+  color: #505050;
+  border-color: #505050;
+}
+
+#reg_button {
+  width: 100%;
+}
+
+.title_commentary {
+  text-align: center;
+}
+
+#commentary_reserv {
+  margin: 5rem 0;
+}
+
+.ui-dialog {
+  width: 70% !important;
+  left: 15% !important;
+}
+
+.ui-dialog .ui-dialog-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#legal_text {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.ui-dialog .ui-dialog-content {
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  #datos_reserva {
+    padding: 0 !important;
+    overflow-x: hidden;
+  }
+  iframe#coverManager html {
+    overflow: hidden;
+  }
+  iframe#coverManager {
+    height: 650px !important;
+  }
+  #reservar_button .form-control, .form-control .reservarButton, #volver_commentary, .reservarButton {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  #datos_reserva .col-xs-6 {
+    width: 100%;
+  }
+}
+div#reservar_button {
+  background: red;
+}/*# sourceMappingURL=main.css.map */
